@@ -1,0 +1,264 @@
+/*
+|----------------------------------------------------------------------------
+| PRICING TABLE
+|----------------------------------------------------------------------------
+*/
+.pricing-table-1 {
+
+	&.image-bg {
+		background: linear-gradient(
+			rgba(247,247,247, 0.9), rgba(247,247,247, 0.85)
+			), 
+			url(../images/pricing-1-bg.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	@media (min-width: 992px) {
+
+		.alpha {
+			padding-right: 0;
+
+			.pricing-element {
+				border-radius: 4px 0 0 4px;
+			}
+		}
+
+		.omega {
+			padding-left: 0;
+
+			.pricing-element {
+				border-radius: 0 4px 4px 0;
+			}
+		}
+
+		.pricing-element {
+			position: relative;
+			top: 15px;
+		}
+
+		.featured {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.pricing-element {
+		padding: 45px 30px;
+		background-color: #fff;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	.package {
+		font-size: 19px;
+		color: #b4b4b4;
+		margin-top: 12px;
+		font-weight: 500;
+		margin-bottom: 55px;
+		text-transform: uppercase;
+	}
+
+	.price {
+		display: inline-table;
+		margin-bottom: 30px;
+	}
+
+	.amount,
+	.currency,
+	.renew {
+		display: table-cell;
+	}
+
+	.currency {
+		font-size: 1.56rem;
+	}
+
+	.amount {
+		font-size: 3.44rem;
+		padding-left: 10px;
+	}
+
+	.renew {
+		font-size: 17px;
+	}
+
+	.package-details {
+		li {
+			line-height: 2.1;
+			font-weight: 400;
+		}
+	}
+
+	.featured {
+		.icon svg {
+			fill: #fff;
+		}
+
+		.package {
+			color: rgba(0, 0, 0, 0.4);
+		}
+
+		.price {
+			color: #fff;
+		}
+
+		.pricing-element {
+			padding-top: 65px;
+			padding-bottom: 55px;
+			top: 0;
+			border-radius: 4px;
+		}
+
+		.package-details {
+			li {
+				color: rgba(255, 255, 255, 0.9);
+			}
+		}
+	}
+}
+
+
+/******************** PRICING TABLE 2 ********************/
+.pricing-table-2 {
+	
+	.pricing-element {
+		border-radius: 30px;
+		padding: 25px;
+		border: 2px solid transparent;
+
+		.package {
+			margin-top: 0;
+		}
+
+		.price {
+			display: inline-block;
+			padding: 10px 25px;
+			margin: 15px 0 20px;
+			border-radius: 30px;
+
+			p {
+				margin-bottom: 0;
+				line-height: 1;
+			}
+
+			.amount {
+				font-size: 50px;
+				margin-bottom: 5px;
+			}
+		}
+
+		.package-details {
+			li {
+				line-height: 2.45;
+			}
+
+			.icon svg {
+				width: 18px;
+				height: 18px;
+				margin-right: 5px;
+			}
+		}
+
+		.btn {
+			margin: 30px 0 10px;
+		}
+
+		&.featured {
+
+			.price {
+				color: rgba(255, 255, 255, 0.9);
+			}
+
+			.btn-trans {
+				color: #fff;
+				border-color: transparent;
+			}
+		}
+	}
+}
+
+/******************** SUBSCRIPTION PLAN AKA PRICING TABLE 3 ********************/
+.pricing-element-3 {
+	padding: 27px;
+	border-radius: 4px;
+	text-align: center;
+
+	&.pricing-element-border {
+		border: 1px solid #efefef;
+	}
+
+	&.featured {
+
+		.package {
+			color: #fff;
+		}
+
+		.price {
+			color: #fff;
+		}
+
+		h5 {
+			color: rgba(0, 0, 0, 0.55);
+		}
+
+		.package-details {
+			color: rgba(255, 255, 255, 0.9);
+		}
+
+		a {
+			color: #fff;
+
+			.icon svg {
+				fill: #fff;
+			}
+		}
+	}
+
+	.package {
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	.price {
+		display: inline-table;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.currency,
+	.amount {
+		display: table-cell;
+	}
+
+	.currency {
+		font-size: 1.56rem;
+		line-height: 0.15;
+		vertical-align: top;
+	}
+
+	.amount {
+		font-size: 60px;
+		padding-left: 10px;
+	}
+
+	.title-text {
+		margin-bottom: 25px;
+	}
+
+	.package-details {
+		margin-bottom: 20px;
+
+		li {
+			line-height: 30px;
+		}
+	}
+}
+
+
+/******************** PRICING TABLE 4 ********************/
+.pricing-table-4 {
+	.package {
+		color: @title_text_color;
+		font-weight: 500;
+	}
+}

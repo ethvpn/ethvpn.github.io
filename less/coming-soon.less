@@ -1,0 +1,227 @@
+/*
+|----------------------------------------------------------------------------
+| COMING SOOON
+|----------------------------------------------------------------------------
+*/
+.coming-soon {
+	background: url(../images/coming-soon.jpg) no-repeat center center fixed;
+	min-height: 100vh;
+	background-size: cover;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.sub-heading {
+		line-height: 1.6;
+		font-size: 18px;
+		margin-top: 22px;
+		margin-bottom: 55px;
+
+	}
+
+	.input-group {
+		margin-top: 32px;
+	}
+
+	.app-icon {
+		@media (max-width: 991px) {
+			text-align: center;
+		}
+
+		.icon svg {
+			width: 15px;
+			height: 15px;
+			fill: @title_text_color;
+		}
+	}
+
+	.error-msg {
+		margin-top: 15px;
+		margin-bottom: 0;
+		color: red;
+	}
+}
+
+.box-shadow {
+	box-shadow: 0 0 20px rgba(0,0,0,0.08);
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.coming-soon-1 {
+
+	.our-message {
+		padding-top: 75px;
+		padding-bottom: 100px;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		@media (min-width: 1200px) {
+			padding-right: 80px;
+		}
+
+		@media (max-width: 991px) and (min-width: 768px) {
+			padding-left: 80px;
+			padding-right: 80px;
+		}
+	}
+}
+
+.triangle-bg {
+	position: relative;
+	padding-top: 57px;
+	padding-bottom: 58px;
+
+	@media (max-width: 480px) {
+		overflow: hidden;
+	}
+
+	svg {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: auto;
+		height: 100%;
+		z-index: 1;
+	}
+
+	img {
+		position: relative;
+		z-index: 2;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+/******************** COMING SOON 2 ********************/
+.coming-soon-2 {
+	position: relative;
+	margin-top: 180px;
+	margin-bottom: 30px;
+	text-align: center;
+
+	.heading-text {
+		padding-top: 275px;
+		margin-bottom: 25px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.inner-content {
+		padding: 20px 45px 35px 30px;
+
+		form {
+			@media (min-width: 992px) {
+				text-align: left;
+			}
+		}
+	}
+
+	@media (max-width: 991px) {
+		.container-half-left {
+			width: auto;
+			height: 199px;
+			right: 0;
+		}
+
+		.container-half-right {
+			width: auto;
+			left: 0;
+			top: 199px;
+			height: 206px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.container-half-right {
+			height: 286px;
+		}
+	}
+}
+
+.intro-video {
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	top: -150px;
+}
+
+.launch-countdown {
+	color: rgba(255, 255, 255, 0.95);
+
+	h3 {
+		color: rgba(255, 255, 255, 0.95);
+		margin-bottom: 40px;
+	}
+
+	li {
+		display: inline-block;
+		font-family: 'Hind', sans-serif;
+		position: relative;
+		margin-left: 30px;
+		margin-right: 30px;
+		font-weight: 500;
+		text-transform: uppercase;
+		font-size: 14px;
+
+		span {
+			font-size: 60px;
+			font-weight: 300;
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		&:after {
+			content: "/";
+			font-weight: 300;
+			font-size: 60px;
+			position: absolute;
+			top: 0;
+			right: -40px;
+			color: rgba(255, 255, 255, 0.35);
+		}
+
+		&:last-child:after {
+			content: '';
+		}
+	}
+
+	@media (max-width: 480px) {
+		li {
+			margin-left: 15px;
+			margin-right: 15px;
+
+			span {
+				font-size: 40px;
+			}
+
+			&:after {
+				font-size: 40px;
+				right: -25px;
+			}
+		}
+	}
+
+	@media (min-width: 992px) and (max-width: 1199px) {
+		li {
+			span {
+				font-size: 40px;
+			}
+
+			&:after {
+				font-size: 40px;
+			}
+		}
+	}
+
+}
+
+
+@media (max-width: 480px) {
+	.coming-soon-1 {
+		text-align: center;
+	}
+}

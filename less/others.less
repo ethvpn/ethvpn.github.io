@@ -1,0 +1,802 @@
+/*
+|----------------------------------------------------------------------------
+| OTHERS
+|----------------------------------------------------------------------------
+*/
+.faqs-2-items {
+	.title-text {
+		margin-bottom: 15px;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	.mb50 {
+		margin-bottom:60px;
+	}
+}
+
+
+/*
+|----------------------------------------------------------------------------
+| OTHER MISC SECTIONS
+|----------------------------------------------------------------------------
+*/
+#photography-portfolio .mix {
+	display: none;
+}
+
+.filter-buttons {
+	text-align: center;
+	margin-bottom: 30px;
+
+	li {
+		display: inline-block;
+		position: relative;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		&:after {
+			content: "·";
+			font-size: 50px;
+			position: absolute;
+			right: -8px;
+			top: 5px;
+		}
+
+		&:last-child:after {
+			content: "";
+		}
+	}
+
+	.filter {
+		color: @title_text_color;
+		font-weight: 500;
+		font-size: 19px;
+	}
+}
+
+/******************** ABOUT AUTHORS ********************/
+.about-authors {
+
+	.author-thumb {
+		width: 215px;
+		height: 215px;
+	}
+
+	figcaption {
+		margin-top: 32px;
+		margin-bottom: 25px;
+	}
+
+	.author-name {
+		margin-bottom: 5px;
+	}
+
+	.autograph {
+		margin-top: 15px;
+	}
+
+	.thumbnail-circle {
+		padding: 4px;
+	}
+
+	&.white-bg {
+		.thumbnail-circle {
+			background-color: #f7f7f7;
+		}
+	}
+
+	&.secondary-bg {
+		.thumbnail-circle {
+			background-color: #fff;
+		}
+	}
+
+}
+
+.thumbnail-circle {
+	border-radius: 100%;
+}
+
+
+/******************** COURSE INSTRUCTORS ********************/
+.intro-vio {
+
+	.title-text {
+		margin-top: 32px;
+		margin-bottom: 5px;
+	}
+
+	.img-responsive {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	p {
+		margin-bottom: 0px;
+	}
+}
+
+
+/******************** SPEAKERS 1 ********************/
+.speakers-1 {
+	padding-top: 120px;
+	padding-bottom: 100px;
+
+	.hero-tabs {
+		position: relative;
+
+		li {
+
+			@media (min-width: 400px) and (max-width: 767px) {
+				max-width: 380px;
+				margin-left: 0;
+				margin-right: auto;
+			}
+
+			&.active {
+				.speaker-intro:after {
+					visibility: visible;
+				}
+			}
+
+			@media (min-width: 768px) {
+
+				&:nth-child(2) {
+					.speakers-bio {
+						left: -375px;
+					}
+				}
+
+				&:nth-child(4) {
+					.speakers-bio {
+						left: -375px;
+					}
+				}
+			}
+
+			@media (min-width: 992px) {
+
+				&:nth-child(2) {
+					.speakers-bio {
+						left: -242px;
+					}
+				}
+
+				&:nth-child(3) {
+					.speakers-bio {
+						left: -484px;
+					}
+				}
+
+				&:nth-child(4) {
+					.speakers-bio {
+						left: -726px;
+					}
+				}
+			}
+
+			@media (min-width: 1200px) {
+
+				&:nth-child(2) {
+					.speakers-bio {
+						left: -292px;
+					}
+				}
+
+				&:nth-child(3) {
+					.speakers-bio {
+						left: -584px;
+					}
+				}
+
+				&:nth-child(4) {
+					.speakers-bio {
+						left: -876px;
+					}
+				}
+			}
+		}
+	}
+
+	.speaker-intro {
+		border-radius: 30px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -79px;
+			border: solid transparent;
+			border-width: 27px 18px;
+			border-top-color: #f7f7f7;
+			z-index: 2;
+			visibility: hidden;
+		}
+
+		.img-scale {
+			max-height: 257px;
+		}
+
+		.thumb {
+			border-radius: 30px 30px 0 0;
+			width: 100%;
+		}
+
+		figcaption {
+			text-align: center;
+			padding: 10px 10px 15px;
+			position: relative;
+		}
+
+		.icon-collapsed {
+			position: absolute;
+			top: -43px;
+			right: 0;
+			padding: 5px;
+			height: 40px;
+			width: 40px;
+			
+		}
+
+		.icon {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			visibility: hidden;
+			opacity: 0;
+			transition: all 0.4s;
+
+			svg {
+				fill: #fff;
+				height: 32px;
+				width: 32px;
+			}
+
+			&.active {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+	}
+	
+	.speaker-name {
+		margin-bottom: 3px;
+	}
+
+	.position {
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+
+	.speakers-bio {
+		padding: 50px 65px 25px;
+		margin-bottom: 25px;
+		border-radius: 4px;
+		display: none;
+		// width: 1140px;
+		position: relative;
+		// left: -293px;
+		z-index: 1;
+
+		&.active {
+			display: block;
+		}
+
+		.strong {
+			font-size: 17px;
+			font-weight: 500;
+			color: @title_text_color;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+
+
+/******************** SPEAKERS 2 ********************/
+.speakers-2 {
+
+	.img-hover-content {
+		border-radius: 30px 30px 0 0;
+
+		.overlay-content {
+			bottom: ~"calc(-100% + 76px)";
+		}
+
+		.img-intro {
+			height: 76px;
+		}
+	}
+}
+
+
+.img-hover-content {
+	position: relative;
+	overflow: hidden;
+
+	&:hover {
+		.overlay-content {
+			bottom: 0;
+		}
+	}
+
+	img {
+		min-width: 100%;
+	}
+
+	.overlay-content {
+		position: absolute;
+		left: 0;
+		transition: all 0.4s;
+		width: 100%;
+		height: 100%;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.img-intro {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.speaker-name {
+		margin-bottom: 0;
+		font-size: 19px;
+		font-weight: 500;
+	}
+
+	.speaker-position {
+		margin-bottom: 0;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	.btn {
+		color: #fff;
+	}
+
+	.btn-trans {
+		border-color: #fff;
+
+		&:hover {
+			background: #fff;
+			border-color: #fff;
+		}
+	}
+
+	.img-desc {
+		padding: 22px 20px;
+	}
+
+	.social-profiles {
+		li {
+			display: inline-block;
+			margin-left: 3px;
+			margin-right: 3px;
+		}
+
+		a {
+			&:hover {
+				.icon svg {
+					fill: #fff;
+				}
+			}
+		}
+	}
+
+	.icon svg {
+		fill: #fff;
+	}
+}
+
+
+
+/******************** JOIN US ********************/
+.join-us {
+	padding-top: 120px;
+	padding-bottom: 110px;
+
+	.heading-text {
+		color: #fff;
+	}
+
+	&.image-bg {
+		background: url(../images/join-us.jpg);
+		background-size: cover;
+	}
+
+	&.dark-image-bg {
+		background: 
+			linear-gradient( rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75) ), 
+			url(../images/join-us.jpg);
+		background-size: cover;
+	}
+
+	.sub-heading {
+		margin-top: 25px;
+		margin-bottom: 75px;
+	}
+}
+
+
+/******************** SPONSORS ********************/
+.sponsors-1 {
+	padding-top: 95px;
+	padding-bottom: 100px;
+
+	.client-logo {
+		margin-bottom: 16px;
+
+		img {
+			opacity: 0.4;
+		}
+	}
+}
+
+/******************** SPONSORS 2 ********************/
+.sponsors-2 {
+
+	&.image-bg {
+		background: url(../images/event-bg-1.jpg) center top;
+		background-size: cover;
+	}
+
+	&.dark-image-bg {
+		background: 
+			linear-gradient( rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75) ), 
+			url(../images/event-bg-1.jpg) center top;
+		background-size: cover;
+	}
+
+	.client-logo {
+		margin-top: 30px;
+		margin-bottom: 50px;
+
+		@media (min-width: 992px) {
+			li + li {
+				margin-left: 30px;
+			}
+
+			img {
+				max-width: 129px;
+			}
+		}
+	}
+}
+
+
+/******************** RESTAURANT MENU ********************/
+.resraurant-order {
+	@media (max-width: 991px) {
+		.container-half {
+			display: none;
+		}
+	}
+}
+
+.restaurant-menu {
+	border-radius: 4px;
+	padding: 25px;
+
+	.title-text {
+		border-bottom: 2px dashed #efefef;
+		padding-bottom: 9px;
+	}
+
+	ul {
+		margin-top: 30px;
+
+		li {
+			border-bottom: 1px solid  #efefef;
+			padding-bottom: 10px;
+			margin-bottom: 14px;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+/******************** RESTAURANT RESERVATION / ORDER ********************/
+.resraurant-order {
+	.order-list {
+		margin-bottom: 20px;
+	}
+
+	.radio {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+| NEMO PANELS
+|----------------------------------------------------------------------------
+*/
+.panel {
+	.title-text {
+		margin-bottom: 0;
+		line-height: 1;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.panel-faqs {
+
+	.panel {
+		box-shadow: none;
+		border: none;
+		background-color: transparent;
+		overflow: hidden;
+	}
+
+	.panel-heading {
+		padding: 0;
+	}
+
+	.panel-body {
+		margin-top: 2px;
+		border: none !important;
+	}
+
+	.title-text {
+
+		a {
+			display: block;
+			position: relative;
+		}
+
+		.collapsed {
+			color: @title_text_color;
+		}
+	}
+}
+
+.panel-group-lg {
+	margin-bottom: 0;
+
+	.panel {
+		border-radius: 4px;
+
+		+ .panel {
+			margin-top: 25px;
+		}
+
+		.title-text {
+			a {
+				padding: 18px 30px;
+			}
+		}
+
+		.panel-body {
+			padding: 18px 30px;
+		}
+	}
+}
+
+.panel-group-sm {
+	margin-bottom: 0;
+
+	.panel {
+		border-radius: 2px;
+
+		+ .panel {
+			margin-top: 20px;
+		}
+
+		.title-text {
+			a {
+				padding: 15px 20px;
+			}
+		}
+
+		.panel-body {
+			padding: 15px 20px;
+		}
+	}
+}
+
+
+/******************** NEMO PANEL 1 ********************/
+.panel-nemo-1 {
+	padding-top: 60px;
+	padding-bottom: 20px;
+
+	.panel {
+		background-color: transparent;
+		box-shadow: none;
+		border-top: 1px solid rgba(255, 255, 255, 0.25);
+		padding-top: 17px;
+		padding-bottom: 17px;
+		padding-left: 20px;
+		border-radius: 0;
+
+		+ .panel {
+			margin-top: 0;
+		}
+
+	}
+
+	.panel-title {
+		display: inline-block;
+		font-size: 22px;
+	}
+
+	.icon svg {
+		fill: #fff;
+		width: 40px;
+		height: 40px;
+		padding-right: 10px;
+	}
+
+	.panel-body {
+		padding-top: 5px;
+		padding-bottom: 0;
+		padding-left: 47px;
+	}
+}
+
+
+/******************** PANEL SCHEDULE ********************/
+.panel-schedule {
+	box-shadow: none;
+	margin-bottom: 30px;
+	border: none;
+	background-color: transparent;
+
+	.panel-heading,
+	.panel-body,
+	.panel-footer {
+		padding: 17px 30px;
+	}
+
+	.schedule-time {
+		font-weight: 500;
+		position: relative;
+		margin-right: 13px;
+		padding-right: 15px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 6px;
+			right: 0;
+			height: 25px;
+		}
+
+		sup {
+			font-size: 65%;
+		}
+	}
+
+	.panel-body {
+		
+	}
+
+	.panel-footer {
+		padding: 17px 30px;
+	}
+
+	.panel-body,
+	.panel-footer {
+		margin-top: 2px;
+	}
+
+	.panel-footer {
+		border: none;
+	}
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+| CONTAINER HALF CONTENT
+|----------------------------------------------------------------------------
+*/
+.content-half {
+	position: relative;
+}
+
+.container-half {
+	position: absolute;
+	vertical-align: middle;
+	top: 0;
+	bottom: 0;
+	width: 50%;
+
+	&.pr30 {
+		width: ~"calc(50% - 30px)";
+	}
+}
+
+.container-half-left {
+	left: 0;
+	background-position: top right;
+}
+
+.container-half-right {
+	right: 0;
+	background-position: top left;
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+| POST STYLE
+|----------------------------------------------------------------------------
+*/
+.post-preview {
+	border-radius: 4px;
+
+	.media-left {
+		padding-right: 0;
+		position: relative;
+	}
+
+	.post-type {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		padding: 5px 15px;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 500;
+		border-radius: 0 4px 4px 0
+	}
+
+	.media-body {
+		padding: 25px;
+		vertical-align: middle;
+	}
+
+	.category {
+		font-size: 14px;
+		text-transform: uppercase;
+		margin-bottom: 3px;
+		line-height: 1.5;
+	}
+
+	.title-text {
+		margin-bottom: 10px;
+	}
+
+	@media (min-width: 580px) {
+		.thumb {
+			max-width: 260px;
+		}
+	}
+
+	@media (max-width: 579px) {
+		display: block;
+
+		.media-left,
+		.media-body {
+			display: block;
+			width: auto;
+		}
+
+		.thumb {
+			width: 100%;
+		}
+	}
+}

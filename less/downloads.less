@@ -1,0 +1,78 @@
+/*
+|----------------------------------------------------------------------------
+| DOWNLOADS
+|----------------------------------------------------------------------------
+*/
+/******************** DOWNLAD 1 ********************/
+.download-app-3 {
+	padding-top: 125px;
+	padding-bottom: 75px;
+}
+
+.logo-in-bg {
+	display: inline-block;
+	position: relative;
+	height: 90px;
+	width: 90px;
+	border-radius: 30px;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 46px;
+
+	img {
+		position: absolute;
+		bottom: -5px;
+		right: -5px;
+	}
+
+	.icon svg {
+		width: 50px;
+		height: 90px;
+	}
+}
+
+.subscribe-newsletter {
+	margin-top: 90px;
+}
+
+
+/******************** DOWNLAOD 2 ********************/
+.download-app-2 {
+
+	.item {
+
+		@media (min-width: 768px) {
+			padding-left: 55px;
+			padding-right: 55px;
+
+			&:last-child {
+				border-color: transparent;
+			}
+		}
+
+		@media (min-width: 992px) {
+			border-right: 1px solid rgba(0, 0, 0, 0.05);
+		}
+	}
+
+	.icon svg {
+		fill: @title_text_color;
+		margin-bottom: 20px;
+	}
+
+	.btn {
+		margin-top: 25px;		
+	}
+}
+
+/******************** DOWNLAOD APP 3 ********************/
+.download-app-3 {
+	&.image-bg {
+		background: linear-gradient(
+				rgba(0, 0, 0, 0.75),
+				rgba(0, 0, 0, 0.75)
+			),
+			url(../images/testimonials-1.jpg) no-repeat center bottom;
+		background-size: cover;
+	}
+}

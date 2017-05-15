@@ -1,0 +1,159 @@
+/*
+|----------------------------------------------------------------------------
+| NAVBAR STYLE
+|----------------------------------------------------------------------------
+*/
+.navbar-nemo {
+	background-color: #fff;
+	border-color: #efefef;
+	transition: all 0.4s;
+
+	.navbar-nav {
+		> li {
+			font-weight: 500;
+
+			> a {
+				color: @title_text_color;
+
+				&:hover,
+				&:focus {
+					background-color: transparent;
+				}
+			}
+		}
+
+		> .active {
+			> a {
+				background-color: transparent;
+			}
+		}
+	}
+
+	.navbar-collapse {
+		border-color: #efefef;
+	}
+}
+
+.navbar-brand {
+	line-height: 30px;
+	height: 74px;
+
+	img {
+		height: 100%;
+	}
+}
+
+.appear-onscroll {
+	top: -75px;
+}
+
+.navbar-toggle {
+	position: relative;
+	width: 50px;
+	height: 45px;
+	padding: 0;
+	border: 0;
+	margin-top: 14px;
+	margin-right: 20px;
+	overflow: hidden;
+
+	.icon-bar {
+		position: absolute;
+		left: 10px;
+		top: 21px;
+		width: 30px;
+		height: 3px;
+		transition: all 0.5s;
+		background-color: #fff !important;
+
+		+ .icon-bar {
+			margin-top: 0;
+		}
+	}
+
+	.icon-bar-top {
+		transform: rotate(-45deg);
+	}
+
+	.icon-bar-middle {
+		opacity: 0;
+		left: -30px;
+	}
+
+	.icon-bar-bottom {
+		transform: rotate(45deg);
+	}
+
+	&.collapsed {
+		.icon-bar {
+		}
+			
+		.icon-bar-top {
+			transform: rotate(0);
+			top: 13px;
+		}
+
+		.icon-bar-middle {
+			opacity: 1;
+			left: 10px;
+		}
+
+		.icon-bar-bottom {
+			transform: rotate(0);
+			top: 29px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+
+.navbar-transparent {
+	background-color: transparent !important;
+	border-color: rgba(255, 255, 255, 0.3);
+	
+	.navbar-nav {
+		> li {
+			font-weight: 500;
+
+			> a {
+				color: #fff;
+
+				&:hover {
+					color: #fff !important;
+				}
+			}
+		}
+
+		> .active {
+			> a {
+				color: #fff !important;
+			}
+		}
+	}
+}
+
+.navbar-nav {
+	> li {
+		> a {
+			padding-top: 22px;
+			padding-bottom: 22px;
+			line-height: 30px;
+		}
+	}
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.navbar-nav {
+	> li {
+		> a {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+
+}

@@ -1,0 +1,108 @@
+/*
+|----------------------------------------------------------------------------
+| THE VIDEO 
+|----------------------------------------------------------------------------
+*/
+.video-player {
+	position: relative;
+	line-height: 0;
+
+	video {
+		width: 100%;
+	}
+
+	.btn {
+		width: 230px;
+		height: 60px;
+		position: absolute;
+		left: 50%;
+		bottom: 50%;
+		transform: translate(-50%, 50%);
+		transition: all 0.6s;
+
+		.icon svg {
+			fill: #fff;
+			width: 30px;
+			height: 30px;
+			margin-right: 5px;
+		}
+
+		span {
+			transition: all 0.4s;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+
+			&.active {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.video-features {
+	padding: 35px;
+	border-radius: 4px;
+
+	h4 {
+		margin-top: 0;
+		margin-bottom: 13px;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.media-left {
+		vertical-align: middle;
+	}
+
+	.icon svg {
+		width: 40px;
+		height: 40px;
+		margin-top: -5px;
+	}
+}
+
+/******************** THE VIDEO 2 ********************/
+.the-video-2 {
+	padding: 175px 0;
+	position: relative;
+
+	.heading-text,
+	p {
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.4s;
+	}
+
+	&.playing {
+		.heading-text,
+		p {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	button {
+		&:active,
+		&:focus {
+			outline: none;
+		}
+	}
+
+	button {
+		margin: 50px 0 30px;
+	}
+
+	.icon svg {
+		width: 100px;
+		height: 100px;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}

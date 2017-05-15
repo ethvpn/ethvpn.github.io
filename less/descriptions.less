@@ -1,0 +1,349 @@
+/*
+|----------------------------------------------------------------------------
+| DESCRIPTIONS
+|----------------------------------------------------------------------------
+*/
+.app-description-1,
+.app-description-2 {
+
+	ul .icon svg {
+		vertical-align: middle;
+	}
+
+	.list-inline,
+	.list-block {
+		margin-top: 25px;
+	}
+}
+
+.list-inline,
+.list-block {
+	li {
+		padding-top: 10px;
+		padding-left: 0;
+		padding-right: 20px;
+	}
+
+	.icon svg {
+		width: 17px;
+		height: 17px;
+		margin-right: 8px;
+	}
+}
+
+/******************** APP DESCRIPTION 1 ********************/
+.app-description-1 {
+	.img-responsive {
+		width: 100%;
+		max-width: 504px;
+	}
+}
+
+
+/******************** APP DESCRIPTION 2 ********************/
+.app-description-2 {
+	.img-responsive {
+		width: 100%;
+		max-width: 465px;
+	}
+
+	@media (min-width: 992px) {
+		text-align: left;
+
+		.section-heading {
+			margin-top: 50px;
+			text-align: left;
+
+
+		}
+		.lines {
+			margin-left: 34px;
+			margin-right: auto;
+		}
+	}
+
+	@media (max-width: 991px) {
+		.img-responsive {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+
+/******************** APP DESCRIPTION 3 ********************/
+.app-description-3 {
+	color: #fff;
+
+	@media (max-width: 991px) {
+		.container-half {
+			width: 100%;
+
+			&.cover-bg {
+				position: relative;
+				width: 100%;
+				height: 460px;
+				z-index: 1;
+			}
+		}
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+
+		&:hover {
+			.icon svg {
+				fill: #fff;
+			}
+		}
+	}
+}
+
+
+/******************** BOOK DESCRIPTION  ********************/
+.book-description {
+	text-align: center;
+
+	.text-strong {
+		li {
+			margin-right: 15px;
+			display: inline-block;
+		}
+	}
+
+	@media (min-width: 992px) {
+		text-align: left;
+	}
+
+	@media (max-width: 991px) {
+		.lines {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+
+/******************** COURCE DESCRIPTION ********************/
+.course-description {
+	.swiper-wrapper {
+		padding-bottom: 60px;
+	}
+}
+
+.desc-pic-header {
+	border-radius: 4px;
+	text-align: center;
+
+	.desc-body {
+		padding: 25px 45px 35px;
+	}
+
+	.btn {
+		margin-top: 15px;
+	}
+}
+
+.desc-title {
+	position: relative;
+	border-radius: 4px 4px 0 0;
+	height: 155px;
+	overflow: hidden;
+
+	.title-element {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 40px 10px;
+	}
+
+	.bg-thumb {
+		width: 100%;
+	}
+
+	.title-text {
+		position: relative;
+		z-index: 1;
+		color: #fff;
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+
+	.icon svg {
+		fill: #fff;
+		position: relative;
+		z-index: 1;
+	}
+}
+
+
+/******************** EVENT SCHEDULE 1 ********************/
+.schedule {
+
+	.tab-btn {
+		text-align: center;
+	}
+}
+
+.schedule-content {
+	padding-top: 60px;
+}
+
+.tab-btn {
+
+	li {
+		display: inline-block;
+
+		+ li {
+			margin-left: 10px;
+		}
+
+		a {
+			color: @title_text_color;
+			padding: 8px 35px;
+			border-radius: 30px;
+			display: block;
+			font-weight: 500;
+			text-decoration: none;
+		}
+
+		&.active {
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.objective-time {
+	margin-top: 45px;
+	font-size: 50px;
+	font-weight: 500;
+
+	sup {
+		font-weight: 300;
+		font-size: 70%;
+	}
+}
+
+.objective {
+	padding: 25px 30px;
+	border-radius: 4px;
+
+	.category {
+
+		li {
+			margin-bottom: 12px;
+			display: inline-block;
+			text-transform: uppercase;
+			margin-right: 25px;
+			font-weight: 500;
+		}
+
+		.icon svg {
+			width: 18px;
+			height: 18px;
+			vertical-align: top;
+			margin-right: 3px;
+		}
+	}
+
+	.title-text {
+		margin-bottom: 15px;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.white-bg {
+	.tab-btn {
+		li {
+			a {
+				background-color: #f7f7f7;
+			}
+		}
+	}
+}
+
+.secondary-bg {
+	.tab-btn {
+		li {
+			a {
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+
+/******************** EVENT SCHEDULE 2 ********************/
+.post-meta {
+	li {
+		display: inline-block;
+		margin-right: 20px;
+		font-weight: 500;
+		color: @title_text_color;
+	}
+}
+
+
+/******************** ABOUT US  ********************/
+.about-conference {
+	padding-top: 125px;
+	padding-bottom: 55px;
+	text-align: center;
+
+	@media (min-width: 992px) {
+		text-align: left;
+	}
+
+	@media (min-width: 1200px) {
+		.section-heading {
+			margin-top: 50px;
+		}
+	}
+
+	@media(max-width: 991px) {
+		.lines {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+
+/******************** RESTAURANT DESCRIPTION 1 ********************/
+.resraurant-description-1 {
+	text-align: center;
+
+	.container {
+		padding-top: 138px;
+		padding-bottom: 150px;	
+	}
+
+	.title-text {
+		margin-bottom: 18px;
+	}
+
+	.list-block {
+		margin-bottom: 45px;
+	}
+
+	@media (min-width: 992px) {
+		text-align: left;
+	}
+
+	@media (max-width: 991px) {
+		.cover-bg {
+			position: relative;
+			width: 100% !important;
+			height: 450px;
+		}
+	}
+}
+

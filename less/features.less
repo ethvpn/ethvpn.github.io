@@ -1,0 +1,415 @@
+/*
+|----------------------------------------------------------------------------
+| FEATURES SECTIONS
+|----------------------------------------------------------------------------
+*/
+.feature-item {
+	.icon-shape {
+		margin-bottom: 25px;
+	}
+
+	.icon {
+		margin-bottom: 20px;
+	}
+
+	.title-text {
+		margin-bottom: 15px;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/******************** APP FEATURE 1 ********************/
+.app-features-1 {
+	@media (min-width: 768px) {
+		.feature-item {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+
+	.img-responsive { 
+		width: 100%;
+		max-width: 545px;
+		margin: 20px auto 0;
+	}
+}
+
+
+/******************** APP FEATURE 2 ********************/
+.app-features-2 {
+
+	@media (min-width: 992px) {
+		.section-heading {
+			margin-top: 50px;
+		}
+	}
+
+	.media {
+		margin-top: 52px;
+
+		+ .media {
+			margin-top: 26px;
+		}
+	}
+
+	.img-responsive {
+		width: 100%;
+		max-width: 445px;
+	}
+}
+
+/******************** APP FEATURES 3 ********************/
+.grid-border {
+	.icon {
+		margin-top: -7px;
+		margin-bottom: 20px;
+	}
+
+	.title-text {
+		margin-bottom: 15px;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	.item {
+		padding-bottom: 50px;
+		position: relative;
+		transition: all 0.3s;
+
+		@media (max-width: 767px) {
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+
+		@media (min-width: 768px) {
+			padding-left: 30px;
+			padding-right: 30px;
+
+			&:after,
+			&:before {
+				content: "";
+				position: absolute;
+			}
+
+			&:after {
+				bottom: 0;
+				left: 0;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+				width: 100%;
+			}
+
+			&:before {
+				left: 0;
+				top: 0;
+				border-left: 1px solid rgba(0, 0, 0, 0.08);
+				height: 100%;
+			}
+		}
+
+		@media (min-width: 768px) and (max-width: 991px) {
+			&:nth-child(n + 3) {
+				padding-top: 50px;
+			}
+
+			&:nth-child(2n - 1) {
+				&:before {
+					border-color: transparent;
+				}
+			}
+
+			&:nth-last-child(-n + 2) {
+				padding-bottom: 0;
+
+				&:after {
+					border-color: transparent;
+				}
+			}
+		}
+
+		@media (min-width: 992px) {
+			&:nth-child(n + 4) {
+				padding-top: 50px;
+			}
+
+			&:nth-child(3n + 1) {
+				&:before {
+					border-color: transparent;
+				}
+			}
+
+			&:nth-last-child(-n + 3) {
+				padding-bottom: 0;
+
+				&:after {
+					border-color: transparent;
+				}
+			}
+		}
+	}
+}
+
+
+/******************** APP FEATURES 4 ********************/
+.feature-side-content {
+
+	.icon-shape {
+		margin-top: 3px;
+		transition: all 0.3s;
+	}
+
+	.title-text {
+		transition: all 0.3s;
+	}
+
+	&.active,
+	&:hover {
+		.icon-shape {
+			svg {
+				fill: #fff;
+			}
+		}
+	}
+
+	.feature-content {
+		width: ~"calc(100% - 65px)";
+
+		&.pull-left {
+			text-align: right;
+			padding-right: 30px;
+		}
+
+		&.pull-right {
+			padding-left: 30px;
+		}
+	}
+
+	@media (max-width: 991px) {
+		text-align: center;
+
+		.pull-left {
+			float: none !important;
+		}
+
+		.pull-right {
+			float: none !important;
+		}
+
+		.feature-content{
+			width: 100%;
+
+			&.pull-left {
+				text-align: center;
+				padding-right: 0;
+			}
+
+			&.pull-right {
+				text-align: center;
+				padding-left: 0;
+			}
+		}
+	}
+
+
+	+ .feature-side-content {
+		margin-top: 60px;
+	}
+
+	@media (min-width: 400px) and (max-width: 991px) {
+		max-width: 370px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+.features-swiper {
+	position: relative;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	width: 280px;
+
+	@media (min-width: 992px) {
+		padding-bottom: 33px;
+	}
+
+	.screenshot-frame {
+		position: absolute;
+		width: 100%;
+	}
+
+	.swiper-container {
+		width: 240px;
+	}
+
+	.swiper-wrapper {
+		padding-top: 71px;
+		padding-bottom: 123px;
+	}
+
+	.swiper-slide {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+
+/******************** APP FEATURES 3 ********************/
+.app-features-5 {
+
+	.media-chained {
+		padding-top: 15px;
+
+		+.media-chained {
+			padding-top: 45px;
+		}
+	}
+
+	.img-responsive {
+		width: 100%;
+		max-width: 470px;
+	}
+}
+
+
+/******************** SMALL FEATURES ********************/
+.small-features {
+	padding: 100px 0 43px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+	.icon svg {
+		vertical-align: top;
+	}
+
+	.title-text {
+		margin-bottom: 8px;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+/******************** E-LEARNING ********************/
+.elearning-features {
+
+	.icon {
+		margin-bottom: 28px;
+	}
+}
+
+
+/******************** RESTAURANT FEATURES ********************/
+.feature-style-half-content {
+	.feature-item {
+		padding-bottom: 40px;
+		padding-top: 40px;
+
+		@media (min-width: 992px) {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		&:last-child {
+			.feature-item {
+				padding-bottom: 0;
+			}
+		}
+
+		.cover-bg {
+			position: relative;
+			width: 100%;
+			height: 300px;
+		}
+	}
+			
+	.icon {
+		margin-bottom: 32px;
+	}
+
+	.title-text {
+		margin-bottom: 25px;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+/******************** RESTAURANT FEATURES ********************/
+.restaurant-features-2 {
+	.delivery-time {
+		font-weight: 500;
+		margin-top: 24px;
+		margin-bottom: 14px;
+	}
+}
+
+/******************** PHOTOGRAPHY FEATURES ********************/
+.photography-features {
+	.img-hover-content {
+		.overlay-content {
+			bottom: ~"calc(-100% + 100px)";
+		}
+
+		.img-intro {
+			height: 100px;
+		}
+
+		.img-desc {
+			padding: 22px;
+		}
+
+		.title-text {
+			margin-bottom: 0;
+			color: #fff;
+		}
+
+		@media (min-width: 992px) and (max-width: 1199px) {
+			.overlay-content {
+				bottom: ~"calc(-100% + 50px)";
+			}
+
+			.img-intro {
+				height: 50px;
+			}
+
+			.title-text {
+				font-size: 18px;
+			}
+
+			.img-desc {
+				padding: 10px;
+			}
+
+			p {
+				line-height: 21px;
+				margin-bottom: 15px;
+			}
+
+			.btn-md {
+				padding: 5px 20px;
+				font-size: 17px;
+			}
+		}
+	}
+
+	@media (min-width: 480px) and (max-width: 991px) {
+		[class^="col-"],
+		[class*="col-"] {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+	}
+}

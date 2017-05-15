@@ -1,0 +1,127 @@
+/*
+|----------------------------------------------------------------------------
+| SCREENSHOTS
+|----------------------------------------------------------------------------
+*/
+.screenshots-1 {
+	padding-top: 120px;
+	padding-bottom: 107px;
+}
+
+.screenshot-slides {
+	.swiper-wrapper {
+		padding-bottom: 70px;
+	}
+
+	.swiper-slide {
+		img {
+			width: 100%;
+		}
+	}
+
+	.swiper-slide-active {
+		margin-right: 20px;
+
+		img {
+			opacity: 1 !important;
+			transition: all 0.4s;
+
+		}
+	}
+
+	.screenshot-frame {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.screenshot-slides {
+		.screenshot-frame {
+			width: 272px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			top: 0;
+			transform: translateX(-50%);
+			z-index: 2;
+			display: block;
+		}
+
+		.swiper-wrapper {
+			padding-top: 69px;
+			padding-bottom: 113px;
+		}
+
+		.swiper-slide {
+			img {
+				opacity: 0.7;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.screenshot-slides {
+		.screenshot-frame {
+			width: 208px;
+		}
+
+		.swiper-wrapper {
+			padding-top: 53px;
+			padding-bottom: 113px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.screenshot-slides {
+		.screenshot-frame {
+			width: 252px;
+		}
+
+		.swiper-wrapper {
+			padding-top: 63px;
+			padding-bottom: 113px;
+		}
+	}
+}
+
+
+
+/******************** SCREENSHOTS 2 ********************/
+.screenshots-2 {
+
+	img {
+		border: 3px solid #efefef;
+		border-radius: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.screen-title {
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+
+	.screen-no {
+		display: inline-block;
+		margin-right: 3px;
+		width: 23px;
+		height: 23px;
+		line-height: 23px;
+		border-radius: 100%;
+		text-align: center;
+	}
+
+
+	@media (min-width: 400px) and (max-width: 767px) {
+		.lightbox {
+			display: block;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
