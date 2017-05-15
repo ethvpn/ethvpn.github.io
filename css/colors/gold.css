@@ -1,0 +1,286 @@
+/*
+|----------------------------------------------------------------------------
+| GOLD COLOR THEME
+|----------------------------------------------------------------------------
+*/
+/*
+	BASE COLOR CODE: #baad7c
+	BASE COLOR END (FOR GRADIENT): #a29668
+	HOVER COLOR: #8b7c43
+*/
+/******************** GLOBAL STYLES ********************/
+a {
+  color: #baad7c;
+}
+.text-color {
+  color: #baad7c;
+}
+.icon svg {
+  fill: #baad7c;
+}
+.shape-bg {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+.gradient-bg {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+.icon-border-1 {
+  border: 1px solid #baad7c;
+}
+.icon-border-2 {
+  border: 2px solid #baad7c;
+}
+.btn-base {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+.btn-base:after {
+  background: #8b7c43;
+}
+.btn-trans {
+  color: #baad7c;
+  border: 2px solid #baad7c;
+}
+.btn-trans .icon {
+  fill: #baad7c;
+}
+.btn-trans:hover,
+.btn-trans:focus,
+.btn-trans:active {
+  background-color: #8b7c43;
+  border-color: #8b7c43;
+}
+.btn-white {
+  color: #baad7c;
+}
+.tab-btn li.active a {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+.filter-buttons .active {
+  color: #baad7c;
+}
+/******************** NAVBAR STYLE ********************/
+.navbar-nemo .navbar-nav > li > a:hover,
+.navbar-nemo .navbar-nav > li > a:focus {
+  color: #baad7c;
+}
+.navbar-nemo .navbar-nav > .active > a {
+  color: #baad7c;
+}
+.navbar-toggle {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+/******************** SECTION STYLES ********************/
+.gradient-overlay:before {
+  background-image: linear-gradient(to bottom right, rgba(40, 40, 40, 0.23), rgba(186, 173, 124, 0.23));
+}
+.transparent-overlay:before {
+  background-image: linear-gradient(to bottom right, rgba(186, 173, 124, 0.9), rgba(186, 173, 124, 0.9));
+}
+.transparent-overlay.photography-home:before {
+  background-image: linear-gradient(to bottom right, rgba(186, 173, 124, 0.7), rgba(186, 173, 124, 0.7));
+}
+.polygon-bg {
+  background-image: url(../../images/polygon-bg/gold.jpg);
+}
+.video-bg:before {
+  background-image: linear-gradient(to bottom right, rgba(40, 40, 40, 0.75), rgba(186, 173, 124, 0.75));
+}
+.section-heading .lines {
+  border-top: 2px solid #baad7c;
+}
+.section-heading .lines:before,
+.section-heading .lines:after {
+  border-top: 2px solid #baad7c;
+}
+.heading-pre-suf:before,
+.heading-pre-suf:after {
+  background-color: #baad7c;
+}
+/* SWIPER BULLETS */
+.swiper-pagination-bullet-active {
+  background-color: #baad7c;
+}
+.event-info {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+.event-info.white-bg {
+  color: #baad7c;
+}
+.event-info.white-bg .heading-text {
+  color: #baad7c;
+}
+/******************** FORMS ********************/
+.form-control:focus {
+  border-color: #baad7c;
+}
+.input-group .form-control {
+  box-shadow: 0 0 20px 2px rgba(186, 173, 124, 0.06);
+}
+.form-standard:focus {
+  border-color: #baad7c;
+}
+.form-underlined .form-control:focus {
+  border-color: #baad7c;
+}
+.select-radio input[type="radio"]:checked + label {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+.select-outer:after {
+  border-color: #baad7c transparent transparent;
+}
+.select-outer .form-inline-input {
+  color: #baad7c;
+}
+.form-widget .btn-trans {
+  background-color: rgba(186, 173, 124, 0.05);
+}
+.select-item input[type="checkbox"]:before {
+  border: 2px solid #baad7c;
+}
+.select-item input[type="checkbox"]:checked:after {
+  background-color: #baad7c;
+}
+.select-item .form-control {
+  color: #baad7c;
+}
+.nav-btn-tabs .active .btn {
+  border-color: #baad7c;
+  color: #baad7c;
+}
+.order-list li:before {
+  color: #baad7c;
+}
+.select-dropdown .form-standard {
+  color: #baad7c;
+}
+.radio-standard input[type="radio"]:checked + label:after {
+  background-color: #baad7c;
+}
+.radio-standard label:before {
+  border: 1px solid #baad7c;
+}
+.order-select-menu .form-control {
+  color: #baad7c;
+}
+.total-payment:before {
+  color: #baad7c;
+}
+.total-payment span {
+  color: #baad7c;
+}
+/******************** DESCRIPTIONS ********************/
+.desc-title .title-element {
+  background-image: linear-gradient(to bottom right, rgba(186, 173, 124, 0.9), rgba(162, 150, 104, 0.9));
+}
+.objective-time {
+  color: #baad7c;
+}
+/******************** FEATURES SECTIONS ********************/
+.feature-side-content.active .title-text,
+.feature-side-content:hover .title-text {
+  color: #baad7c;
+}
+.feature-side-content.active .icon-shape,
+.feature-side-content:hover .icon-shape {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+/******************** GALLERY STYLE ********************/
+.gallery-img-pop .hover-effect {
+  background-image: linear-gradient(to bottom right, rgba(186, 173, 124, 0.7), rgba(162, 150, 104, 0.7));
+}
+/******************** OTHERS ********************/
+.speakers-1 .speaker-intro figcaption {
+  border-top: 3px solid #baad7c;
+}
+.img-hover-content:hover .img-intro {
+  background-image: linear-gradient(to bottom right, rgba(186, 173, 124, 0), rgba(162, 150, 104, 0));
+}
+.img-hover-content .overlay-content {
+  background-image: linear-gradient(to bottom right, rgba(186, 173, 124, 0.9), rgba(162, 150, 104, 0.9));
+}
+.img-hover-content .img-intro {
+  background-image: linear-gradient(to bottom right, rgba(186, 173, 124, 0.2), rgba(162, 150, 104, 0.2));
+}
+.img-hover-content .btn-trans:hover {
+  color: #baad7c;
+}
+.restaurant-menu .title-text {
+  color: #baad7c;
+}
+.panel-faqs .title-text a {
+  color: #baad7c;
+}
+.panel-schedule .schedule-time:after {
+  border-left: 2px solid #baad7c;
+}
+.post-preview .post-type {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+.post-preview .category {
+  color: #baad7c;
+}
+.speakers-1 .speaker-intro .icon-collapsed {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+/******************** PRICING TABLE ********************/
+.pricing-table-1 .price {
+  color: #baad7c;
+}
+.pricing-table-1 .featured .pricing-element {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+.pricing-table-2 .pricing-element .price {
+  border: 2px solid #baad7c;
+  color: #baad7c;
+}
+.pricing-table-2 .pricing-element.featured {
+  border-color: #baad7c;
+}
+.pricing-table-2 .pricing-element.featured .package {
+  color: #baad7c;
+}
+.pricing-table-2 .pricing-element.featured .price {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+.pricing-table-2 .pricing-element.featured .btn-trans {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+.pricing-table-2 .pricing-element.featured .btn-trans:hover {
+  background-image: linear-gradient(to bottom right, #a29668, #a29668);
+}
+.pricing-element-3 .price {
+  color: #baad7c;
+}
+.pricing-element-3.featured {
+  background-image: linear-gradient(to bottom right, #baad7c, #a29668);
+}
+/******************** SCREENSHOTS ********************/
+.screenshots-2 .screen-title {
+  color: #baad7c;
+}
+.screenshots-2 .screen-no {
+  border: 1px solid #baad7c;
+}
+/******************** TESTIMONIAL ********************/
+.testimonials .client-name {
+  color: #baad7c;
+}
+.testimonials-4 .thumb {
+  background-color: #baad7c;
+}
+.blockquote-gradient-bg {
+  background-image: linear-gradient(to bottom right, rgba(186, 173, 124, 0.9), rgba(162, 150, 104, 0.9));
+}
+/******************** FOOTER STYLES ********************/
+.footers .socialize a:hover .icon svg {
+  fill: #baad7c;
+}
+/******************** TRIANGLE BG ********************/
+.triangle-bg svg .start {
+  stop-color: #baad7c;
+}
+.triangle-bg svg .end {
+  stop-color: #a29668;
+}
+
+/*# sourceMappingURL=gold.css.map */
