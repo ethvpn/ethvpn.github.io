@@ -63,7 +63,7 @@
 	9.3. PRICING TABLE 3
 	9.4. PRICING TABLE 4
 
-10. THE VIDEO 
+10. THE VIDEO
 	10.1. VIDEO PLAYER 1
 	10.2. THE VIDEO 2
 
@@ -2596,7 +2596,7 @@ button:focus {
 }
 /*
 |----------------------------------------------------------------------------
-| THE VIDEO 
+| THE VIDEO
 |----------------------------------------------------------------------------
 */
 .video-player {
@@ -4159,6 +4159,61 @@ button:focus {
   .coming-soon-1 {
     text-align: center;
   }
+}
+
+video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+#video-background {
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  overflow: hidden;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -99;
+}
+
+.app-home-2 {
+  padding-top: 90px;
+}
+
+.home-download-btn .btn {
+  margin-bottom: 10px;
+}
+
+.mb50 {
+  margin-bottom: 15px;
+}
+
+#app-home-2 {
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.7), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.7), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.7), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+
+.clearfix {
+  height: 74px;
+}
+
+.padbot {
+  padding-bottom: 10vh;
 }
 
 /*# sourceMappingURL=style.css.map */
